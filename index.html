@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김신비 | Global Buddy </title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter for English, Noto Sans KR for Korean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Inter와 Noto Sans KR 폰트를 조합하여 사용합니다 */
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* 부드러운 스크롤 */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- ===== Header / Navbar ===== -->
+    <header class="sticky top-0 z-50 bg-gray-900/80 backdrop-blur-md shadow-lg">
+        <nav class="container mx-auto max-w-6xl px-6 py-4 flex justify-between items-center">
+            <!-- Logo/Name -->
+            <a href="#home" class="text-2xl font-bold text-white hover:text-indigo-400 transition-colors">
+                김신비
+            </a>
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="text-gray-300 hover:text-indigo-400 transition-colors">About</a>
+                <a href="#skills" class="text-gray-300 hover:text-indigo-400 transition-colors">Skills</a>
+                <a href="#project" class="text-gray-300 hover:text-indigo-400 transition-colors">Project</a>
+                <a href="#contact" class="text-gray-300 hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Placeholder) -->
+            <div class="md:hidden">
+                <!-- Mobile menu can be added here if needed -->
+                <svg class="w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main class="container mx-auto max-w-6xl px-6">
+
+        <!-- ===== Hero Section ===== -->
+        <section id="home" class="min-h-[80vh] flex flex-col justify-center items-center text-center py-20">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                김신비 (KIM SHINBI)
+            </h1>
+            <p class="text-2xl md:text-3xl text-indigo-400 font-medium">
+                편리함을 줄 수 있는 시스템 개발자
+            </p>
+        </section>
+
+        <!-- ===== About Me Section ===== -->
+        <section id="about" class="py-24">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">About Me</h2>
+            <div class="bg-gray-800 rounded-xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
+                <div class="text-lg md:text-xl text-gray-300 leading-relaxed space-y-6">
+                    <p>언어 학습 챗봇을 효율적이고 유연한 학습 도구로 사용할 수 있도록 사용자가 실시간으로 피드백 받을 수 있도록 AI를 활용하여 시스템을 구축하였습니다.</p>
+                    <p>이 시스템으로 인해 사용자들이 필요할 때 도움이 될 수 있는 시스템으로 나아가고 싶습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Skills Section ===== -->
+        <section id="skills" class="py-24">
+            <h2 class="text-4xl font-bold text-center text-white mb-16">Skills</h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 transform transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-400">Frontend</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-indigo-600 text-white text-sm font-medium px-4 py-2 rounded-full">JavaScript</span>
+                        <span class="bg-indigo-600 text-white text-sm font-medium px-4 py-2 rounded-full">React</span>
+                        <span class="bg-indigo-600 text-white text-sm font-medium px-4 py-2 rounded-full">Tailwind CSS</span>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 transform transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold mb-6 text-green-400">Backend</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-green-600 text-white text-sm font-medium px-4 py-2 rounded-full">Node.js</span>
+                        <span class="bg-green-600 text-white text-sm font-medium px-4 py-2 rounded-full">Firebase</span>
+                    </div>
+                </div>
+                <!-- AI & DevOps -->
+                <div class="bg-gray-800 rounded-xl shadow-2xl p-8 transform transition-transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold mb-6 text-sky-400">AI & DevOps</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-sky-600 text-white text-sm font-medium px-4 py-2 rounded-full">Google Gemini API</span>
+                        <span class="bg-gray-600 text-white text-sm font-medium px-4 py-2 rounded-full">GitHub</span>
+                        <span class="bg-gray-600 text-white text-sm font-medium px-4 py-2 rounded-full">Render</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Project Section ===== -->
+        <section id="project" class="py-24">
+            <h2 class="text-4xl font-bold text-center text-white mb-6">Project</h2>
+            <h3 class="text-3xl font-semibold text-center text-indigo-400 mb-16">Global Buddy</h3>
+            
+            <div class="bg-gray-800 rounded-xl shadow-2xl p-8 md:p-12 space-y-12">
+                
+                <!-- 문제 정의 -->
+                <div>
+                    <h4 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2 text-white">
+                        [ 문제 정의 ]
+                    </h4>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        언어 학습을 할 때 시간과 장소 제한으로 인한 어려움을 해결하기 위해 간단하게 폰으로 학습을 할 수 있게 하는 것이 목표입니다.
+                    </p>
+                </div>
+
+                <!-- 아키텍처 -->
+                <div>
+                    <h4 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2 text-white">
+                        [ 아키텍처/설계 ]
+                    </h4>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-300">
+                        <li><strong>데이터베이스 (Firestore):</strong> 사용자가 원하는 상대를 생성할 때 만들어진 페르소나를 관리하기 위해 사용합니다.</li>
+                        <li><strong>인증 (Firebase Authentication):</strong> 사용자 인증을 하기 위해 Firebase Authentication을 사용합니다.</li>
+                        <li><strong>AI 연동 (Gemini API):</strong> 핵심 AI 기능 (페르소나 생성, 피드백)을 위해 연동합니다.</li>
+                    </ul>
+                </div>
+
+                <!-- 핵심 기능 -->
+                <div>
+                    <h4 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2 text-white">
+                        [ 핵심 기능 ]
+                    </h4>
+                    <div class="grid md:grid-cols-2 gap-8 mt-6">
+                        <!-- Feature 1 -->
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-inner transform transition-transform hover:scale-105">
+                            <h5 class="text-xl font-bold text-indigo-400 mb-3">사용자 맞춤 페르소나</h5>
+                            <p class="text-gray-300">사용자 맞춤 프롬포트로 원하는 성격의 상대를 만들 수 있습니다. (LLM)</p>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-inner transform transition-transform hover:scale-105">
+                            <h5 class="text-xl font-bold text-indigo-400 mb-3">지능형 피드백</h5>
+                            <p class="text-gray-300">AI를 이용하여 사용자가 문법에 맞지 않은 문장을 구사하면 알맞은 문법으로 답할 수 있도록 피드백을 줍니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 나의 역할 -->
+                <div>
+                    <h4 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2 text-white">
+                        [ 나의 역할 및 기여 ]
+                    </h4>
+                    <ul class="list-disc list-inside space-y-3 text-lg text-gray-300">
+                        <li>'Global Buddy' 아이디어 기획</li>
+                        <li>LLM 기반 페르소나 구축 및 프롬프트 엔지니어링</li>
+                        <li>GitHub를 이용한 버전 관리</li>
+                    </ul>
+                </div>
+
+                <!-- 결과 및 성과 -->
+                <div>
+                    <h4 class="text-2xl font-semibold mb-4 border-b border-gray-700 pb-2 text-white">
+                        [ 결과 및 성과 ]
+                    </h4>
+                    <p class="text-lg text-gray-300">
+                        <span class="bg-green-900/50 text-green-300 font-medium px-4 py-2 rounded-md">페르소나 일관성 유지</span>
+                        - LLM 프롬프트 최적화를 통해 사용자가 설정한 페르소나가 대화 내내 일관되게 유지되도록 구현했습니다.
+                    </p>
+                </div>
+
+                <!-- 회고 (배운 점 / 개선점) -->
+                <div>
+                    <h4 class="text-2xl font-semibold mb-6 border-b border-gray-700 pb-2 text-white">
+                        [ 회고 (Retrospective) ]
+                    </h4>
+                    <div class="grid md:grid-cols-2 gap-8 mt-6">
+                        <!-- 배운 점 -->
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-inner">
+                            <h5 class="text-xl font-bold text-blue-400 mb-3">배운 점</h5>
+                            <p class="text-gray-300">LLM을 사용하여 어떻게 사용자의 물음에 최적화된 응답을 할 수 있는지, 그리고 일관성 있는 대화 경험을 제공하기 위한 프롬프트 설계의 중요성을 알게 되었습니다.</p>
+                        </div>
+                        <!-- 개선점 -->
+                        <div class="bg-gray-700 p-6 rounded-lg shadow-inner">
+                            <h5 class="text-xl font-bold text-yellow-400 mb-3">개선점</h5>
+                            <p class="text-gray-300">현재 프로토타입을 넘어, 더 다양한 언어를 학습할 수 있도록 지원 언어들을 추가하고 피드백 시스템을 고도화할 예정입니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact" class="py-24 text-center">
+            <h2 class="text-4xl font-bold text-white mb-8">Contact</h2>
+            <p class="text-xl text-gray-400 mb-10">
+                편리한 시스템에 대해 함께 고민하고 싶습니다.<br>
+                언제든지 편하게 연락주세요.
+            </p>
+            <div class="flex justify-center items-center gap-6 flex-wrap">
+                <!-- Email Button -->
+                <a href="mailto:ksb040721@gmail.com" 
+                   class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg text-lg transition-colors transform hover:-translate-y-1 shadow-lg">
+                    Email
+                </a>
+                <!-- GitHub Button -->
+                <a href="https://github.com/ksinbi" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 px-8 rounded-lg text-lg transition-colors transform hover:-translate-y-1 shadow-lg">
+                    GitHub
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="py-10 text-center text-gray-500 border-t border-gray-800 mt-12">
+        <p>&copy; 2025 김신비. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
